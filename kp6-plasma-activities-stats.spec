@@ -1,19 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.1.2
+%define		kdeplasmaver	6.1.3
 %define		qtver		5.15.2
 %define		kpname		plasma-activities-stats
 %define		kf6ver		5.39.0
 
 Summary:	plasma activities
 Name:		kp6-%{kpname}
-Version:	6.1.2
+Version:	6.1.3
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	bc487aa4f3347283833d9496a5e08190
+# Source0-md5:	58d213ec78d6e6b5bfb87b52f6744c3b
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= 5.15.0
 BuildRequires:	Qt6Gui-devel >= 5.15.0
