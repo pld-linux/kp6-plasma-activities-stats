@@ -1,19 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.4.5
+%define		kdeplasmaver	6.5.0
 %define		qtver		5.15.2
 %define		kpname		plasma-activities-stats
 %define		kf6ver		5.39.0
 
 Summary:	plasma activities
 Name:		kp6-%{kpname}
-Version:	6.4.5
-Release:	2
+Version:	6.5.0
+Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	047f1c252c460ffaad6e0ca9628b2372
+# Source0-md5:	ac1ddc68b1cf4b2544de612d60c5780a
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= 5.15.0
 BuildRequires:	Qt6Gui-devel >= 5.15.0
@@ -81,7 +81,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %ghost %{_libdir}/libPlasmaActivitiesStats.so.1
-%attr(755,root,root) %{_libdir}/libPlasmaActivitiesStats.so.*.*
+%{_libdir}/libPlasmaActivitiesStats.so.*.*
 %{_datadir}/qlogging-categories6/plasma-activities-stats.categories
 %{_datadir}/qlogging-categories6/plasma-activities-stats.renamecategories
 
