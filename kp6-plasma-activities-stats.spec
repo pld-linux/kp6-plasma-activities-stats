@@ -41,7 +41,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		qt6dir		%{_libdir}/qt6
 
 %description
-plasma activities.
+A library for accessing the usage data collected by the activities
+system.
+
+%description -l pl.UTF-8
+Biblioteka przeznaczona do odczytywania danych użycia zbieranych przez
+system aktywności.
 
 %package devel
 Summary:	Header files for %{kpname} development
